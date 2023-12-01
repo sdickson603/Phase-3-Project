@@ -1,0 +1,3 @@
+I keep this fairly simple but wanted to make sure that I had some practice with effects on both the links and project cards.
+I added some border interest for a little more visual appeal and it made the cards pop a little nicer.
+I went with a simple form at the bottom but it did take some work as I had trouble making sure all lines of the form were on their own line and that it was aligned to the left hande side.

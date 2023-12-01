@@ -1,3 +1,5 @@
+/* This should clear out the browser settings */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,6 +23,7 @@ time, mark, audio, video {
 
 header {
     background-color: #333;
+    /* used a color selector to pick a color */
     color: #3498db;
     padding: 20px;
     text-align: center;
