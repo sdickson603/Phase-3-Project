@@ -21,7 +21,7 @@ time, mark, audio, video {
 
 header {
     background-color: #333;
-    color: #fff;
+    color: #3498db;
     padding: 20px;
     text-align: center;
 }
@@ -29,7 +29,7 @@ header {
 h1 {
     font-size: 30px;
     font-weight: bold;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }    
 
 h2 {
@@ -61,18 +61,23 @@ nav a:hover {
    display: flex;
    padding-top: 20px;
    padding-bottom: 20px;
-   border: 2px solid #333;
+   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+
 }
 
 .image-container {
     margin-right: 10px;
-    padding-right: 2px soild #333;
+    padding-right: 2px;
+    border-right: 2px solid black ;
 }
     
 .profile-picture {
+    display: flex;
+    justify-content: space-around;
     width: 150px;
     height: auto;
     border-radius: 50%;
+
 }
 .profile-text {
     padding-left: 10px;
@@ -80,22 +85,32 @@ nav a:hover {
 
 .skills {
     display: flex;
+     /* updated to get the skills list to be vertical */
+    flex-direction: column;
+    padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border: 2px solid #333;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
 }
 
-ul {
-    display: flex;
+.skills-list ul {
+    list-style: none;
     padding: 0;
-    margin: 0;
-    justify-content: space-evenly;
+    text-align: center;
 }   
-li {
-    display: flex;
+.skills-list li {
     width: 100px;
-    border: 1px solid black;
     margin: 5px;
+    text-align: left;
+
+}
+
+.projects {
+    display: flex;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 .cards {
     display: flex;
@@ -103,41 +118,57 @@ li {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    border: 2px solid #333;
+
 }
 .card {
     justify-content: space-evenly;
+    align-items: center;
     width: 200px;
     margin: 10px;
     border: 1px solid #ccc;
+    /* found a way to shadow when researching some different way to style */
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
 }
-.card .text {
-    padding: 0 20px 20px;
+.card:hover {
+    background-color: grey;
 }
+.card .text {
+    padding: 20px;
+    text-align: center;
+}
+
 .contact {
     display: flex;
-    border-bottom: 2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    
 }
 
 .contact-form {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0 auto;
-
+    justify-content: flex-start;
+    padding-left: 20px;
 }
 form {
     width: 300px;
-    margin: 0 auto;
+    padding-left: 20px;
+
 }
 
 label, input, textarea {
     margin-bottom: 10px;
+    /* adding block as way to have the contact form lines to all display 
+    on a single line, should explore going with a table instead? */
+    display:block;
 }
 
 .flutie-logo {
     width: 150px;
     height: auto;
     
+}
+
+@media (max-width: 768px) {
+
 }
